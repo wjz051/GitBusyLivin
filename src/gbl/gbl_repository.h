@@ -1,4 +1,4 @@
-#ifndef GBL_REPOSITORY_H
+﻿#ifndef GBL_REPOSITORY_H
 #define GBL_REPOSITORY_H
 
 #include "gbl_string.h"
@@ -138,6 +138,7 @@ public:
     static int diff_print_lines_callback(const git_diff_delta*, const git_diff_hunk*, const git_diff_line*, void *payload);
     static int staged_cb(const char *path, const char *matched_pathspec, void *payload);
     static int stash_cb(size_t index, const char *message, const int *stash_id, void *payload);
+    static int cred_acquire_cb(git_cred **out, const char *url, const char *username_from_url, unsigned int allowed_types, void *payload);
 
     QString get_error_msg();
     QString get_libgit2_version();

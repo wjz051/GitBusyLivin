@@ -122,6 +122,13 @@ unix {
 }
 }
 
+debug {
+    DESTDIR = $$PWD/bin/debug
+}
+release {
+    DESTDIR = $$PWD/bin/release
+}
+
 RC_ICONS = resources/images/gitbusylivin.ico
 ICON = resources/images/gitbusylivin.icns
 
