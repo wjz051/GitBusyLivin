@@ -1,4 +1,4 @@
-#include "contentview.h"
+﻿#include "contentview.h"
 #include "mainwindow.h"
 #include "mdichild.h"
 #include "optionsmenubutton.h"
@@ -187,7 +187,7 @@ void ContentView::zoomOut()
 }
 
 /**
- * @brief ContentInfoWidget::ContentInfoWidget
+ * @brief ContentInfoWidget::ContentInfoWidget 文本控制界面
  * @param parent
  */
 ContentInfoWidget::ContentInfoWidget(QWidget *parent) : QFrame(parent)
@@ -298,7 +298,10 @@ ContentInfoTypeLabel::ContentInfoTypeLabel(QWidget *parent) : QLabel(parent)
 {
 }
 
-
+///
+/// \brief ContentEdit::ContentEdit 文本显示编辑界面
+/// \param parent
+///
 ContentEdit::ContentEdit(QWidget *parent) : QTextEdit(parent)
 {
 #ifdef Q_OS_MAC

@@ -1,4 +1,4 @@
-#include "gbl_filemodel.h"
+﻿#include "gbl_filemodel.h"
 #include <QDebug>
 #include <QPixmap>
 #include <QFileInfo>
@@ -314,6 +314,12 @@ QVariant GBL_FileModel::data(const QModelIndex &index, int role) const
                     }
                     else
                     {
+//                        QString sPath = m_sRepoPath;
+//                        sPath += "/" + item->getFolder();
+//                        qDebug()<<sPath;
+//                        QFileInfo fi(sPath);
+//                        QIcon icn = !fi.isDir() ? icnp.icon(fi) : icnp.icon(QFileIconProvider::Folder);
+//                        return QVariant::fromValue(icn);
                         return QVariant::fromValue(icnp.icon(QFileIconProvider::Folder));
                     }
                 }

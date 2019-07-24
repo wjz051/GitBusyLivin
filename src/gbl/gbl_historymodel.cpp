@@ -1,4 +1,4 @@
-#include "gbl_historymodel.h"
+﻿#include "gbl_historymodel.h"
 #include <QUrl>
 #include <QPixmap>
 #include <QTextStream>
@@ -13,7 +13,10 @@
 #include "src/ui/mainwindow.h"
 #include "gbl_storage.h"
 
-
+///
+/// \brief GBL_HistoryModel::GBL_HistoryModel 提交历史页面
+/// \param parent
+///
 GBL_HistoryModel::GBL_HistoryModel(QObject *parent) : QAbstractTableModel(parent)
 {
     m_pHistArr = new GBL_History_Array;

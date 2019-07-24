@@ -1,4 +1,4 @@
-#include "unstageddockview.h"
+﻿#include "unstageddockview.h"
 #include "fileview.h"
 #include "src/gbl/gbl_filemodel.h"
 #include "urlpixmap.h"
@@ -11,7 +11,10 @@
 #include <QItemSelection>
 
 #define BTN_HEIGHT 20
-
+///
+/// \brief UnstagedDockView::UnstagedDockView 修改未提交窗口
+/// \param parent
+///
 UnstagedDockView::UnstagedDockView(QWidget *parent) : QScrollArea(parent)
 {
     setViewportMargins(0,0,0,0);

@@ -1,4 +1,4 @@
-#ifndef GBL_FILEMODEL_H
+﻿#ifndef GBL_FILEMODEL_H
 #define GBL_FILEMODEL_H
 
 #define GBL_FILETREE_VIEW_TYPE_LIST 1

@@ -1,4 +1,4 @@
-#include "mdichild.h"
+﻿#include "mdichild.h"
 
 #include "mainwindow.h"
 #include "historyview.h"
@@ -48,13 +48,16 @@ MdiChild::~MdiChild()
 
 bool MdiChild::init(QString sRepoPath)
 {
+    //初始化仓库
     m_qpRepo = new GBL_Repository(this);
     m_sRepoPath = sRepoPath;
+    //打开仓库
     bool bRet = m_qpRepo->open_repo(m_sRepoPath);
     if (bRet)
     {
         QFileInfo fi(m_sRepoPath);
         QString title(fi.fileName());
+        //判断仓库是否为空
         if (m_qpRepo->is_bare()) title = "[" + title + "]";
         setWindowTitle(title);
         m_sRepoName = title;

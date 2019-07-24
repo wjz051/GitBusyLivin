@@ -1,4 +1,4 @@
-#include "historyview.h"
+﻿#include "historyview.h"
 #include "src/gbl/gbl_historymodel.h"
 #include "mainwindow.h"
 
@@ -11,6 +11,10 @@
 #include <QtMath>
 #include <QHeaderView>
 
+///
+/// \brief HistoryView::HistoryView 提交历史记录页面
+/// \param parent
+///
 HistoryView::HistoryView(QWidget *parent) : QTableView(parent)
 {
     setContentsMargins(0,0,0,0);
