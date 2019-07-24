@@ -1,4 +1,4 @@
-ï»¿#include "unstageddockview.h"
+#include "unstageddockview.h"
 #include "fileview.h"
 #include "src/gbl/gbl_filemodel.h"
 #include "urlpixmap.h"
@@ -12,7 +12,7 @@
 
 #define BTN_HEIGHT 20
 ///
-/// \brief UnstagedDockView::UnstagedDockView ä¿®æ”¹æœªæäº¤çª—å£
+/// \brief UnstagedDockView::UnstagedDockView ĞŞ¸ÄÎ´Ìá½»´°¿Ú
 /// \param parent
 ///
 UnstagedDockView::UnstagedDockView(QWidget *parent) : QScrollArea(parent)
